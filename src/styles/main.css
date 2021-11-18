@@ -219,7 +219,9 @@ main {
 
 .list_item_thumb {
 	width: 100%;
-	max-height: 200px;
+	height: 270px;
+	object-fit: cover;
+	object-position: center;
 }
 
 .list_item_rating {
