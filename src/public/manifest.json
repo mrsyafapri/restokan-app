@@ -1,5 +1,6 @@
 {
     "name": "RestoKan App",
+    "short_name": "RestoKan App",
     "description": "Find the best Restaurants in one Web App",
     "start_url": "/index.html",
     "display": "standalone",
