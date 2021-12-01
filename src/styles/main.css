@@ -190,6 +190,7 @@ main {
 	text-align: left;
 	display: grid;
 	grid-row-gap: 16px;
+	padding: 15px;
 }
 
 .list_item {
