@@ -6,6 +6,7 @@ import './views/component/nav-bar';
 import './views/component/hero-bar';
 import './views/component/footer-bar';
 import App from './views/app';
+import swRegister from './utils/sw-register';
 
 const date = new Date();
 const year = date.getFullYear();
@@ -25,6 +26,7 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
     app.renderPage();
+    swRegister();
 });
 
 footerYear.innerHTML = year;

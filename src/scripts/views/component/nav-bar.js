@@ -9,11 +9,11 @@ class NavBar extends HTMLElement {
                 <div class="logo">
                     <a href="#">RestoKan Apps</a>
                 </div>
-                <a id="hamburgerButton" class="hamburger" aria-label="navigation-menu">
+                <button id="hamburgerButton" class="hamburger" aria-label="navigation-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
-                </a>
+                </button>
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#/favorite">Favorite</a></li>

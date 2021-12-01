@@ -17,6 +17,7 @@
         "indent": 0,
         "linebreak-style": 0,
         "max-len": 0,
-        "new-cap": 0
+        "new-cap": 0,
+        "array-bracket-spacing": 0
     }
 }
