@@ -1,5 +1,5 @@
 const {
-  merge
+  merge,
 } = require('webpack-merge');
 const common = require('./webpack.common');
 
@@ -14,7 +14,7 @@ module.exports = merge(common, {
         options: {
           presets: ['@babel/preset-env'],
         },
-      }, ],
-    }, ],
+      }],
+    }],
   },
 });

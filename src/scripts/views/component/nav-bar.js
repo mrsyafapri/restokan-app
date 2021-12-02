@@ -9,15 +9,15 @@ class NavBar extends HTMLElement {
                 <div class="logo">
                     <a href="#">RestoKan Apps</a>
                 </div>
-                <button id="hamburgerButton" class="hamburger" aria-label="navigation-menu">
+                <button id="hamburgerButton" class="hamburger" aria-label="navigation menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#/favorite">Favorite</a></li>
-                    <li><a href="http://mrsyafapri.github.io" target="_blank" rel="noopener noreferrer">About Us</a></li>
+                    <li><a href="#" aria-label="home">Home</a></li>
+                    <li><a href="#/favorite" aria-label="favorite restaurants">Favorite</a></li>
+                    <li><a href="http://mrsyafapri.github.io" target="_blank" rel="noopener noreferrer" aria-label="about us">About Us</a></li>
                 </ul>
             </nav>
         `;

@@ -12,8 +12,8 @@ const Detail = {
             <div id="hero_detail"></div>
             <main id="mainContent">
                 <section class="container">
-                <div id="restaurant" class="detail"></div>
-                <div id="likeButtonContainer"></div>
+                    <div id="restaurant" class="detail"></div>
+                    <div id="likeButtonContainer"></div>
                 </section>
             </main>
         `;
