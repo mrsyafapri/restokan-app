@@ -2,6 +2,7 @@
 	nav {
 		position: fixed;
 		z-index: 3;
+		opacity: 0.9;
 	}
 
 	.logo {
@@ -93,6 +94,10 @@
 	.list_item_desc {
 		font-size: 14px;
 	}
+
+	.detail__menus {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media screen and (min-width: 700px) {
@@ -118,5 +123,20 @@
 
 	.hero {
 		min-width: 1000px;
+	}
+}
+
+@media screen and (min-width: 1160px) {
+	.detail {
+		padding: 50px 0;
+		display: grid;
+		grid-template-columns: 500px 1fr;
+		gap: 32px;
+	}
+
+	.detail__image {
+		position: sticky;
+		top: 97px;
+		height: auto;
 	}
 }
