@@ -4,7 +4,8 @@ import {
     createRestaurantDetailTemplate,
     createHeroDetail,
 } from '../templates/template-creator';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
+import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
 
 const Detail = {
     async render() {
@@ -27,8 +28,9 @@ const Detail = {
         const hero = document.getElementById('hero_detail');
         hero.innerHTML = createHeroDetail(restaurant);
 
-        LikeButtonInitiator.init({
+        LikeButtonPresenter.init({
             likeButtonContainer: document.querySelector('#likeButtonContainer'),
+            favoriteRestaurants: FavoriteRestaurantIdb,
             restaurant: {
                 id: restaurant.id,
                 pictureId: restaurant.pictureId,
