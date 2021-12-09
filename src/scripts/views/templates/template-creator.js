@@ -100,7 +100,7 @@ const createLoader = () => `
 
 const createEmpty = () => `
     <div class="indicator">
-        <p class="message">Oops... it looks like your Favorite Restaurants List is empty<p>
+        <p class="message" id="empty-favorite-state">Oops... it looks like your Favorite Restaurants List is empty<p>
     </div>
 `;
 
