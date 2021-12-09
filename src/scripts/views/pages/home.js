@@ -3,6 +3,7 @@ import {
     createRestaurantItemTemplate,
     createLoader,
     createMessageFailed,
+    createSkeletonRestaurantCard,
 } from '../templates/template-creator';
 
 const Home = {
@@ -21,9 +22,11 @@ const Home = {
 
     async afterRender() {
         const restaurantsContainer = document.getElementById('list-content');
+        restaurantsContainer.innerHTML = createSkeletonRestaurantCard();
         const loaderContainer = document.getElementById('loader-container');
         loaderContainer.innerHTML = createLoader();
         const restaurants = await RestaurantSource.listRestaurant();
+        restaurantsContainer.innerHTML = '';
         loaderContainer.innerHTML = restaurants.length == 0 ? createMessageFailed() : '';
         restaurants.forEach((restaurant) => {
             restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurant);

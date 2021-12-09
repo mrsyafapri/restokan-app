@@ -9,7 +9,59 @@
 	--poppins: 'Poppins', sans-serif;
 }
 
+.list__item--skeleton {
+	background-color: #1d1d1d;
+	border-radius: 12px;
+	position: relative;
+	overflow: hidden;
+}
 
+.list__item--skeleton::after {
+	content: '';
+	position: absolute;
+	width: 200px;
+	height: 100%;
+	background-color: var(--secondary-color);
+	transform: skew(-32deg);
+	top: 0;
+	left: -100%;
+	animation: skeletonAnimation 1s infinite ease-in-out;
+}
+
+.list__item--skeleton .list__image {
+	border-radius: 12px;
+	background-color: #2f2f2f;
+	height: 200px;
+}
+
+.list__item--skeleton .list__title {
+	height: 39px;
+	margin: 0 0 1px;
+	background-color: #2f2f2f;
+	border-radius: 12px;
+}
+
+.list__item--skeleton .list__description {
+	height: 100px;
+	background-color: #2f2f2f;
+	border-radius: 12px;
+}
+
+.list__item--skeleton .list__info {
+	background-color: #2f2f2f;
+	border-radius: 12px;
+	height: 16px;
+}
+
+@keyframes skeletonAnimation {
+	0% {
+		left: -100%;
+	}
+
+	100% {
+		left: 200%;
+	}
+}
 
 .star {
 	color: var(--secondary-color);

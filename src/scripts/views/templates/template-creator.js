@@ -86,6 +86,27 @@ const createHeroDetail = (restaurant) => `
     </div>
 `;
 
+const createSkeletonRestaurantCard = () => {
+    let skeletonCards = '';
+    for (let i = 0; i < 3; i++) {
+        skeletonCards += `
+            <div class="list__item list__item--skeleton">
+                <div class="list__image--container">
+                    <div class="list__image"></div>
+                </div>
+                <div class="list__content">
+                    <div class="list__data">
+                        <h2 class="list__title"></h2>
+                        <p class="list__description"></p>
+                    </div>
+                    <div class="list__info"></div>
+                </div>
+            </div>
+        `;
+    }
+    return skeletonCards;
+};
+
 const createLoader = () => `
     <div class="indicator">
         <div class="spinner">
@@ -116,6 +137,7 @@ export {
     createLikeButtonTemplate,
     createUnLikeButtonTemplate,
     createHeroDetail,
+    createSkeletonRestaurantCard,
     createLoader,
     createEmpty,
     createMessageFailed,
