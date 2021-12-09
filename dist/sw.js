@@ -28,9 +28,6 @@ var serviceWorkerOption = {
     "/icons/ms-icon-150x150.png",
     "/icons/ms-icon-310x310.png",
     "/icons/ms-icon-70x70.png",
-    "/images/heros/hero-favorite.jpg",
-    "/images/heros/hero-home.jpg",
-    "/images/logo/favicon.png",
     "/favicon.png",
     "/index.html"
   ]

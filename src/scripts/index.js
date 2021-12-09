@@ -9,10 +9,6 @@ import './views/component/footer-bar';
 import App from './views/app';
 import swRegister from './utils/sw-register';
 
-const date = new Date();
-const year = date.getFullYear();
-const footerYear = document.getElementById('footer-year');
-
 const app = new App({
     hamburger: document.querySelector('#hamburgerButton'),
     navLinks: document.querySelector('.nav-links'),
@@ -29,5 +25,3 @@ window.addEventListener('load', () => {
     app.renderPage();
     swRegister();
 });
-
-footerYear.innerHTML = year;
