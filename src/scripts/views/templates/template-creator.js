@@ -1,7 +1,7 @@
 import API_ENDPOINT from '../../globals/api-endpoint';
 
 const createRestaurantDetailTemplate = (restaurant) => `
-    <img src="${API_ENDPOINT.IMG.L}${restaurant.pictureId}" alt="${restaurant.name}" class="detail__image" />
+    <img src="${API_ENDPOINT.IMG.S}${restaurant.pictureId}" alt="${restaurant.name}" class="detail__image" />
     <div class="detail__text">
         <ul class="detail__category">
             ${restaurant.categories.map((category) => `
@@ -48,7 +48,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
     <div class="list_item">
-        <img class="list_item_thumb" src="${API_ENDPOINT.IMG.M}${restaurant.pictureId}" alt="${restaurant.name}" />
+        <img class="list_item_thumb" src="${API_ENDPOINT.IMG.S}${restaurant.pictureId}" alt="${restaurant.name}" />
         <div class="city">City : ${restaurant.city}</div>
         <div class="list_item_content">
             <p class="list_item_rating">
@@ -75,7 +75,7 @@ const createUnLikeButtonTemplate = () => `
 `;
 
 const createHeroDetail = (restaurant) => `
-    <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)), url('${API_ENDPOINT.IMG.L}${restaurant.pictureId}');">
+    <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)), url('${API_ENDPOINT.IMG.M}${restaurant.pictureId}');">
         <div class="hero-inner hero-detail">
             <h1 class="hero-title">${restaurant.name}</h1>
             <h2 class="hero-subtitle">${restaurant.address}, ${restaurant.city}</h2>
