@@ -359,6 +359,14 @@ nav {
 	text-shadow: 1px 1px #141414
 }
 
+.hero-home {
+	background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)), url('../public/images/use-hero/hero-home-large.jpg');
+}
+
+.hero-favorite {
+	background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)), url('../public/images/use-hero/hero-favorite-large.jpg');
+}
+
 main {
 	width: 100%;
 	margin: 0 auto;

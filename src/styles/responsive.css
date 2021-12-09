@@ -98,6 +98,14 @@
 	.detail__menus {
 		grid-template-columns: 1fr 1fr;
 	}
+
+	.hero-home {
+		background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)), url('../public/images/use-hero/hero-home-small.jpg');
+	}
+
+	.hero-favorite {
+		background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)), url('../public/images/use-hero/hero-favorite-small.jpg');
+	}
 }
 
 @media screen and (min-width: 700px) {

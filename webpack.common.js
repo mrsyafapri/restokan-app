@@ -16,15 +16,22 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.css$/,
-      use: [{
-          loader: 'style-loader',
-        },
-        {
-          loader: 'css-loader',
-        },
-      ],
-    }],
+        test: /\.css$/,
+        use: [{
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        use: [{
+          loader: 'file-loader',
+        }],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
