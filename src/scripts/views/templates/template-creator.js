@@ -1,7 +1,7 @@
 import API_ENDPOINT from '../../globals/api-endpoint';
 
 const createRestaurantDetailTemplate = (restaurant) => `
-    <img src="${API_ENDPOINT.IMG.S}${restaurant.pictureId}" alt="${restaurant.name}" class="detail__image" />
+    <img class="lazyload" src="${API_ENDPOINT.IMG.S}${restaurant.pictureId}" alt="${restaurant.name}" class="detail__image" />
     <div class="detail__text">
         <ul class="detail__category">
             ${restaurant.categories.map((category) => `
@@ -48,7 +48,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
     <div class="list_item">
-        <img class="list_item_thumb" src="${API_ENDPOINT.IMG.S}${restaurant.pictureId}" alt="${restaurant.name}" />
+        <img class="lazyload list_item_thumb" src="${API_ENDPOINT.IMG.S}${restaurant.pictureId}" alt="${restaurant.name}" />
         <div class="city">City : ${restaurant.city}</div>
         <div class="list_item_content">
             <p class="list_item_rating">
